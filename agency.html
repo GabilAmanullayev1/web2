@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
    <style>
+
 
 *{
 margin: 0;
@@ -76,7 +78,87 @@ nav .d2 a:hover{color: aqua;}
         height: 50px;
          width: 200px;}
         .sec1 button:hover{background-color: aqua;}
+    
+    .head{
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        flex-direction: column;
+    background-color: orange;padding-bottom: 60px; padding-top: 60px;}
+    .head h1{font-size:40px;color: aliceblue;font-family: Georgia, 'Times New Roman', Times, serif;}
+    .head p{font-size: 20px; color: aliceblue;}
+    .conteiner{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 300px;
+         width: 100%;
+         padding-bottom: 300px;
+        padding-top: 300px;
+        gap: 70px;}
+   
 
+    .conteiner .card{
+       
+        margin: 10px;
+        height: 300px;
+        width: 300px;
+        
+    box-shadow: 5px;
+}
+    .conteiner .card-image{
+        border-radius: 80px;
+        background-color: orange;
+        height: 150px;
+        margin-bottom: 15px;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;}
+
+.card .card-image span.material-symbols-outlined {
+    font-size: 80px;
+    color: aliceblue;
+    text-align: center;
+   
+}
+.conteiner .card h1{font-size:30px ;padding: 15px; }
+.conteiner .card p{font-size: 25px; color: #888;}
+
+.port {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     height: 120vh;
+    width: 100%; 
+    background-color: bisque;
+    padding-top: 100px;}
+
+    .port .port1{
+        width: 100%;
+        height: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        flex-direction: column;
+        font-size: 25px;
+        color: brown;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   
+       
+       
+    
+.port .img{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+gap: 40px;}
+.port .img img{height: 200px; width: 350px;max-width: 600px;}
+.port .img h1{padding-left: 80px; font-size: 25px; color: red;
+     background-color: aliceblue;height: 50px; padding-top: 10px;}
 
    </style>
 </head>
@@ -108,8 +190,58 @@ nav .d2 a:hover{color: aqua;}
 
 
         </div>
-        
-
       </section>
+      <div class="head">
+        <h1>SERVICES.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+       </div>
+
+      <section class="conteiner">
+       
+        <div class="card">
+            <div class="card-image">
+                <span class="material-symbols-outlined">shopping_cart</span>
+            </div>
+            <h1>E-Commerce</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur  omnis enim accusantium. Dolores esse explicabo dolorem .</p>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <span class="material-symbols-outlined">
+                    laptop_windows
+                    </span>
+
+            </div>
+            <h1>Responsive Design</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, odio?</p>
+        </div>
+
+ <div class="card">
+    <div class="card-image">
+        <span class="material-symbols-outlined">lock</span>
+
+    </div>
+            <h1>Web Security</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quas, deleniti .</p>
+        </div>
+      </section>
+<section class="port">
+
+        <div class="port1"> 
+            <h1>PORTFOLIO</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+        <div class="img">
+            <div><img src="1.jpg" alt="">
+            <h1>Thread</h1></div>
+            <div><img src="2.jpg" alt=""><h1>Window</h1></div>
+            <div><img src="3.jpg" alt=""><h1>Explore</h1></div>
+            <div><img src="4.jpg" alt=""><h1>Finish</h1></div>
+            <div><img src="5.jpg" alt=""><h1>Lines</h1></div>
+            <div><img src="6.jpg" alt=""><h1>Soutwest</h1></div>
+        </div>
+</section>
 </body>
 </html>
