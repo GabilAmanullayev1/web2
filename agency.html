@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -156,9 +157,52 @@ nav .d2 a:hover{color: aqua;}
     align-items: center;
     flex-wrap: wrap;
 gap: 40px;}
-.port .img img{height: 200px; width: 350px;max-width: 600px;}
+.port .img img{height: 200px; width: 350px;}
 .port .img h1{padding-left: 80px; font-size: 25px; color: red;
      background-color: aliceblue;height: 50px; padding-top: 10px;}
+
+
+.name{ display: flex;
+    align-items: center;
+    display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+padding-top: 100px;}
+
+.card2{
+    margin: 10px;
+    background-color: #888;
+    width: 220px;
+    height: 320px;
+border-radius: 15px; background-color: #ffc33d;}
+.card-image{
+    
+    background-color: aqua;
+    height: 150px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 10px; /* İstədiyiniz körpülük ölçüsünü burada təyin edə bilərsiniz */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.man-1{background-image: url(man.jpg);}
+
+.card2 .material-symbols-outlined {
+    font-size: 50px; /* İstədiyiniz ölçüyü burada təyin edə bilərsiniz */
+}
+
+.sec4{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+height: 100px;width: 100%;background-color: #888;padding-right: 40px;}
+.sec4 .social img {height: 80px;width: 200px;padding-left: 40px;}
+
+.footer{width: auto;height: 200px;background: rgb(2,0,36);display: flex;justify-content: center;}
+.footer div{ color: #888; font-size: 40px; }
+
 
    </style>
 </head>
@@ -243,5 +287,67 @@ gap: 40px;}
             <div><img src="6.jpg" alt=""><h1>Soutwest</h1></div>
         </div>
 </section>
+
+<section class="name">
+    
+
+    <div class="card2">
+        <div class="card-image man-1"></div>
+            <h4>Parveen Anand</h4>
+            <p>lead designer</p>
+            <a href=""><span class="material-symbols-outlined">
+                chat
+            </span></a>
+            </span></a><a href=""><span class="material-symbols-outlined">
+                mail
+            </span><span class="material-symbols-outlined">
+                call
+                </span></a>
+        </div>
+    <div class="card2">
+        <div class="card-image man-1"></div>
+            <h4>Parveen Anand</h4>
+            <p>lead designer</p>
+            <a href=""><span class="material-symbols-outlined">
+                chat
+            </span></a>
+            </span></a><a href=""><span class="material-symbols-outlined">
+                mail
+            </span><span class="material-symbols-outlined">
+                call
+                </span></a>
+        </div>
+        <div class="card2">
+            <div class="card-image man-1"></div>
+                <h4>Parveen Anand</h4>
+                <p>lead designer</p>
+                <a href=""><span class="material-symbols-outlined">
+                    chat
+                </span></a>
+                </span></a><a href=""><span class="material-symbols-outlined">
+                    share
+                </span><span class="material-symbols-outlined">
+                    call
+                    </span></a>
+            </div>
+    </div>
+</section>
+
+<section class="sec4">
+    <div class="social">
+        <img src="download.png" alt="">
+        <img src="Instagram-name-logo-transparent-PNG.png" alt="">
+        <img src="580b57fcd9996e24bc43c51f.png" alt="">
+    </div>
+
+
+</section>
+
+<footer class="footer">
+    <div>Copyright © Your Website 2023</div>
+ 
+ 
+ </footer>
+ 
 </body>
 </html>
