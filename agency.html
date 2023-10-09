@@ -14,13 +14,68 @@ box-sizing: border-box ;
 
 nav{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 100px;
     width: 100%;
-    background-color: red;
-    gap: 100px;
+    background-color: #1e1e1e;
+    padding: 0 100px;
+    position: fixed;
+    
+   
 }
+
+nav .d1 a{
+    color: yellow;
+    font-size: 28px;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+nav .d1 a:hover{color: aqua;}
+
+nav .d2{
+    display: flex;
+    gap: 25px;
+}
+nav .d2 a{
+    font-size: 20px;
+    color: aliceblue;
+    text-decoration: none;
+}
+nav .d2 a:hover{color: aqua;}
+.section{
+    background-image:url(back.jpg);
+    height: 600px;width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.section .sec1{
+    display: flex;
+     justify-content:center;
+     align-items: center; 
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 200px;}
+
+    .sec1 p{font-size: 35px; font-family: cursive; color: aliceblue;}
+    .sec1 h1{
+        font-size:50px;
+         font-family: 'Times New Roman', Times, serif;
+          font-weight: bold;
+        color: yellow;
+    letter-spacing: 5px;}
+    
+    .sec1 button{
+        background-color: #ffc33d;
+        font-size: 20px;
+        color: aliceblue;
+        border-radius: 30px;
+        height: 50px;
+         width: 200px;}
+        .sec1 button:hover{background-color: aqua;}
 
 
    </style>
@@ -28,20 +83,33 @@ nav{
 <body>
       <nav >
 
-        <div>
+        <div class="d1">
             <a href="">Start Bootstrap</a>
         </div>
 
-        <div>
-            <a href="#">Services</a>
-            <a href="#"> Portfolio</a>
-            <a href="#">About</a>
-            <a href="#">Team</a>
-            <a href="#"> Contact</a>
+        <div class="d2">
+            <a href="#">SERVICES</a>
+            <a href="#"> PORTFOLIO</a>
+            <a href="#">ABOUT</a>
+            <a href="#">TEAM</a>
+            <a href="#"> CONTACT</a>
 
         </div>
 
 
       </nav>
+
+      <section class="section">
+
+        <div class="sec1">
+            <p>Welcome To Our Studio!</p>
+            <h1>It's Nice To Meet You</h1>
+            <button>TELL ME MORE</button>
+
+
+        </div>
+        
+
+      </section>
 </body>
 </html>
